@@ -39,12 +39,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/register",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/register",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"register"
@@ -74,12 +75,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/login",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/login",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"login"
@@ -140,12 +142,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/mahasiswa",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/mahasiswa",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"mahasiswa"
@@ -190,12 +193,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/mahasiswa",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/mahasiswa",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"mahasiswa"
@@ -220,12 +224,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/mahasiswa/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/mahasiswa/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"mahasiswa",
@@ -271,12 +276,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/mahasiswa/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/mahasiswa/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"mahasiswa",
@@ -302,12 +308,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/mahasiswa/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/mahasiswa/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"mahasiswa",
@@ -338,12 +345,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/matakuliah",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/matakuliah",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"matakuliah"
@@ -388,12 +396,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/matakuliah",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/matakuliah",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"matakuliah"
@@ -438,12 +447,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/matakuliah/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/matakuliah/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"matakuliah",
@@ -469,12 +479,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/matakuliah/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/matakuliah/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"matakuliah",
@@ -500,12 +511,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/matakuliah/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/matakuliah/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"matakuliah",
@@ -536,12 +548,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/dosen",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/dosen",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"dosen"
@@ -581,12 +594,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/dosen",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/dosen",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"dosen"
@@ -626,12 +640,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/dosen/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/dosen/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"dosen",
@@ -657,12 +672,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/dosen/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/dosen/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"dosen",
@@ -688,12 +704,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/dosen/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/dosen/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"dosen",
@@ -724,12 +741,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/perkuliahan",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/perkuliahan",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"perkuliahan"
@@ -779,12 +797,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/perkuliahan",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/perkuliahan",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"perkuliahan"
@@ -834,12 +853,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/perkuliahan/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/perkuliahan/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"perkuliahan",
@@ -865,12 +885,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/perkuliahan/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/perkuliahan/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"perkuliahan",
@@ -896,12 +917,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/perkuliahan/1",
-							"protocol": "http",
+							"raw": "https://api-akademik-errina.herokuapp.com/api/perkuliahan/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"perkuliahan",
