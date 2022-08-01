@@ -1,0 +1,917 @@
+{
+	"info": {
+		"_postman_id": "8b013265-8ad3-48a9-81ef-dde438b6f3c2",
+		"name": "Akademik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "erina",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "erina@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "erina123",
+									"type": "default"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "erina123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "erina@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "erina123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc3Njk5LCJleHAiOjE2NTkzODEyOTksIm5iZiI6MTY1OTM3NzY5OSwianRpIjoidU1ONWtMaVhvTGVUY29PRCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.VIDjjzD4sZLYepn-KJrez4DUaaV2pLH47OCu8GXfW44",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api-akademik-errina.herokuapp.com/api/logout",
+							"protocol": "https",
+							"host": [
+								"api-akademik-errina",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mahasiswa",
+			"item": [
+				{
+					"name": "tampil data mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "1901010250",
+									"type": "default"
+								},
+								{
+									"key": "nama",
+									"value": "errina",
+									"type": "default"
+								},
+								{
+									"key": "alamat",
+									"value": "mataram",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail mahasiswa berdasarkan id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "1901010250",
+									"type": "default"
+								},
+								{
+									"key": "nama",
+									"value": "errina edit",
+									"type": "default"
+								},
+								{
+									"key": "alamat",
+									"value": "mataram",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapus mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matakuliah",
+			"item": [
+				{
+					"name": "tampil data matakuliah",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah mata kuliah",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode_mk",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "nama_mk",
+									"value": "mobile",
+									"type": "default"
+								},
+								{
+									"key": "sks",
+									"value": "3",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update mata kuliah",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "kode_mk",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "nama_mk",
+									"value": "java",
+									"type": "default"
+								},
+								{
+									"key": "sks",
+									"value": "4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail matakuliah berdasarkan id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapus matakuliah",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dosen",
+			"item": [
+				{
+					"name": "tampil dosen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah dosen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nip",
+									"value": "1234321562",
+									"type": "default"
+								},
+								{
+									"key": "nama_dosen",
+									"value": "errina",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update dosen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nip",
+									"value": "1111111111",
+									"type": "default"
+								},
+								{
+									"key": "nama_dosen",
+									"value": "erina",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail dosen berdasarkan id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapus dosen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Perkuliahan",
+			"item": [
+				{
+					"name": "tampil perkuliahan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/perkuliahan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"perkuliahan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah perkuliahan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "1901010250",
+									"type": "default"
+								},
+								{
+									"key": "kode_mk",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "nip",
+									"value": "11111111111",
+									"type": "default"
+								},
+								{
+									"key": "nilai",
+									"value": "A",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/perkuliahan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"perkuliahan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update pemrkuliahan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "1901010250",
+									"type": "default"
+								},
+								{
+									"key": "kode_mk",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "nip",
+									"value": "1111111111",
+									"type": "default"
+								},
+								{
+									"key": "nilai",
+									"value": "B",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/perkuliahan/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"perkuliahan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail perkuliahan berdasarkan id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/perkuliahan/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"perkuliahan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapus perkuliahan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjU5Mzc5MzQ0LCJleHAiOjE2NTkzODI5NDQsIm5iZiI6MTY1OTM3OTM0NCwianRpIjoiWHRtOWVETnBHa1FQeENGMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ByTSTIUnXYpVBcraBf5lWGR4R_9YwvzG0T0CKm_nNtA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/perkuliahan/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"perkuliahan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

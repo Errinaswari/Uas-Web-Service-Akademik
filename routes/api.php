@@ -25,5 +25,9 @@ Route::post('/login', App\Http\Controllers\Api\LoginController::class)->name('lo
 Route::group(['middleware' => ['auth:api']], function () {
 
     Route::apiResource('/mahasiswa', App\Http\Controllers\Api\MahasiswaController::class);
+    Route::apiResource('/dosen', App\Http\Controllers\Api\DosenController::class);
+    Route::apiResource('/matakuliah', App\Http\Controllers\Api\MatakuliahController::class);
+    Route::apiResource('/perkuliahan', App\Http\Controllers\Api\PerkuliahanController::class);
+
     Route::post('/logout', App\Http\Controllers\Api\LogoutController::class)->name('logout');
 });
